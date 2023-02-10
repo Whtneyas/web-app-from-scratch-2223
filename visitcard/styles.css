@@ -50,9 +50,6 @@ article:hover .content {
 
 
 
-
-
-
 /************/
 /* VOORKANT */
 /************/
@@ -84,7 +81,7 @@ article div:nth-of-type(1) section:nth-of-type(1) ul {
 
 
 
-/* hoofd */
+/* HOOFD */
 article div:nth-of-type(1) section:nth-of-type(2) {
     order:-1;
     text-align: center;
@@ -100,9 +97,7 @@ article div:nth-of-type(1) section:nth-of-type(2) img{
 
 
 
-
-
-/* contact */
+/* CONTACT */
 article div:nth-of-type(1) section:nth-of-type(3) {
     padding:2em;
 }
@@ -123,7 +118,6 @@ article div:nth-of-type(1) section:nth-of-type(3) ul li {
     display: flex;
     align-items: center;
     /* justify-content: center; */
-
     gap:.5em;
 }
 
@@ -169,7 +163,7 @@ article div:nth-of-type(2) section:nth-of-type(1) ul li img{
 
 
 
-
+/****MEDIA QUERY******/
 
 
 @media (min-width:44em) {
@@ -213,7 +207,7 @@ article div:nth-of-type(2) section:nth-of-type(1) ul li img{
         
     }
 
-    /**Achterkant***/
+    /**ACHTERKANT***/
     article div:nth-of-type(2) section:nth-of-type(1) ul  {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
         gap: 4em 3em;
