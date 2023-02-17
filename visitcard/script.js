@@ -1,6 +1,8 @@
 // Variablesconst 
 
 myMemberUrl = "https://whois.fdnd.nl/api/v1/member?id=cldeoyw463vaj0bw594n8mhn4";
+
+
 // HTML elements
 let naam = document.querySelector(".naam");
 let surname = document.querySelector(".surname");
