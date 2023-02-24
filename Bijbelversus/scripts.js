@@ -7,9 +7,6 @@ const numVerse = document.querySelector("span"); //selects the number of the ver
 const verse = document.querySelector("p"); // selects the p that contains the verse 
 
 
-let number = 2
-
-//when the first page is been clicked , it dissappears and the the second page appears 
 
 document.querySelector("section:nth-of-type(1) img").addEventListener('click', () => {
   firstPage.scrollIntoView({
@@ -19,7 +16,7 @@ document.querySelector("section:nth-of-type(1) img").addEventListener('click', (
 });
 
 const fetchBibleQuote = async () => {
-  // const randomNumber = Math.floor(Math.random() * (15 - 0)) + 0;
+  
   const response = await fetch('https://bible-api.com/romans%201,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16');
 
   if (response.ok) {
@@ -40,7 +37,5 @@ const displayBibleQuote = (randomVerse) => {
 }
 
 fetchBibleQuote();
-
-
 
 nextBtn.addEventListener('click', fetchBibleQuote)
