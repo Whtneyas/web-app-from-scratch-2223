@@ -1,51 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Design Quotes</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./scripts.js" defer ></script>
+    <script src="./scripts.js" defer></script>
 </head>
+
 <body>
-   <header>
+
+
+    <header>
+
+        
         <h1>
+            BOOK OF ROMANS
+        </h1>
+        
+        <div>
+            <!--CHAPTER FILTER -->
+            <label for="chapter">Chapter</label>
+            <select id="chapter" name="chapter">
+                <option value="chapter 12"> chapter 12</option>
+                <option value="chapter 13"> chapter 13 </option>
+                
+             </select>
+          <!--VERSE FILTER -->
+            <label for="verse">Verse</label>
+            <select id="verse" name="verse">
+                <option value="verse 1"> verse 1</option>
+                <option value="verse 2">verse 2</option>
+                <option value="verse 3">verse 3</option>
+                <option value="verse 4">verse 4</option>
+                <option value="verse 5"> verse 5</option>
+                <option value="verse 6">verse 6</option>
+                <option value="verse 7">verse 7</option>
+                <option value="verse 8">verse 8</option>
+                <option value="verse 9"> verse 9</option>
+                <option value="verse 10">verse 10</option>
+               
+            </select>
 
-        </h1>  
-</header>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section>
+            <img src="images/book.svg" alt="book">
+        </section>
 
 
-<main>
 
-    <section>
-        <img src="images/book.svg" alt="book">
-    </section>
+        <section>
 
-    <section>
-
-        <article>
-
+            <!--DROPDOWN MENU CHAPTER & VERSE-->
+        
             <article>
 
-                <h2></h2><span> </span>
-                <h3></h3>
-                <p></p>
-                <img src="./images/hands.svg" alt="">
+                <article>
 
-               <div>
-                <button>previous</button>
-                <button>next</button>
-               </div>
+                    <h2></h2><span> </span>
+                    <h3></h3>
+                    <p></p>
+                    <img src="./images/hands.svg" alt="">
+
+                    <div>
+                        <button>previous</button>
+                        <button>next</button>
+                    </div>
+
+                </article>
 
             </article>
-            
-        </article>
 
-    </section>
-    
+        </section>
 
-</main>
+
+    </main>
 
 </body>
+
 </html>

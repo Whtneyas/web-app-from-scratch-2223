@@ -9,17 +9,15 @@ let surname = document.querySelector(".surname");
 
 
 
-const insertName= async (API) => {
+const insertName = async (API) => {
 
-     const myData = await fetch(API)
-        .then((response) => response.json())
-        .then((myData) => myData.member);
+   const myData = await fetch(API)
+      .then((response) => response.json())
+      .then((myData) => myData.member);
 
-         console.log(myData);
+   console.log(myData);
 
-       naam.innerHTML = myData.name;
-       surname.innerHTML = myData.surname;
-    };
-     insertName(myMemberUrl);
-
-
+   naam.innerHTML = myData.name;
+   surname.innerHTML = myData.surname;
+};
+insertName(myMemberUrl);
