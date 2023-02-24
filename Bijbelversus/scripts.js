@@ -7,7 +7,7 @@ const numVerse = document.querySelector("span"); //selects the number of the ver
 const verse = document.querySelector("p"); // selects the p that contains the verse 
 
 
-
+//first page disappears when it is been clicked
 document.querySelector("section:nth-of-type(1) img").addEventListener('click', () => {
   firstPage.scrollIntoView({
     behavior: 'smooth'
@@ -15,6 +15,7 @@ document.querySelector("section:nth-of-type(1) img").addEventListener('click', (
   firstPage.classList.add('disappear')
 });
 
+// fetching data 
 const fetchBibleQuote = async () => {
   
   const response = await fetch('https://bible-api.com/romans%201,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16');
@@ -28,7 +29,7 @@ const fetchBibleQuote = async () => {
     throw new Error(`Failed to fetch bible quote. Status code: ${response.status}`);
   }
 }
-
+//writing html 
 const displayBibleQuote = (randomVerse) => {
   nameBook.textContent = randomVerse.book_name;
   chapter.textContent = randomVerse.chapter;
