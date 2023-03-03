@@ -11,14 +11,15 @@ function onRouteChanged() {
   
     switch (hash) {
       case "#home":
-        window.location = "'index.html"
+        window.location = "index.html"
+        
         break;
   
       case "#about": 
-        routerView.innerHTML = 
+        routerView.innerHTML = `
         
-        <section id="About">
-            
+        <section id="About" >
+
         <h4>About</h4>
         <article>
             <details>
@@ -99,7 +100,7 @@ function onRouteChanged() {
   
        </section>
   
-  
+ ` ;
         break;
   
   
@@ -110,4 +111,5 @@ function onRouteChanged() {
   
     }
   }
+  export default onRouteChanged
   

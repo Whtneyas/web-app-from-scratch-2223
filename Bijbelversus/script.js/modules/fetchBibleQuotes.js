@@ -1,7 +1,8 @@
 // fetching data 
 
 
-import displayBibleQuote from "../modules/displayBibleQuote.js"
+import displayBibleQuote from "../modules/displayBibleQuote.js";
+// import addData from "../modules/render.js";
 
 const fetchBibleQuote = async () => {
     console.log("it works")
