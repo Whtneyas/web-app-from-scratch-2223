@@ -1,11 +1,22 @@
 
 
-# BIBLE QUOTES:book:
+# Bible Quotes:book:
 
 
 Bibelquote is a responsive website which offers the verses of the book of romans. This website is for christians who want to know the word of God and want to get closer to God. 
 
 <img width="425" alt="image" src="https://user-images.githubusercontent.com/90154152/222978899-e9420d42-9918-451e-a090-1720c1eaafd4.png">
+
+
+## Table of Contents
+   * [Table of Contents](#table-of-contents)
+   * [Bible Quotes](#bible-quotes)
+   * [Technologies used](#technologies-used)
+   * [Installation](#installation)
+   * [Resources](#resources)
+   * [Wishlist](#wishlist)
+   * [Demo](#demo)
+   * [License](#license)
 
 
 
@@ -25,7 +36,13 @@ Bibelquote is a responsive website which offers the verses of the book of romans
 - How to render pages using has routing 
 - Implementation of UI stack ( Zero, partial, ideal, erroand empty states)
 
-## Licence 
+
+## Demo
+
+
+## License 
+
+This project is licensed under the MIT license 
 
 
 
@@ -48,7 +65,7 @@ Bibelquote is a responsive website which offers the verses of the book of romans
 
 
 
-This project is licensed under the MIT license 
+
 
 ### Resources
 - https://openai.com/blog/chatgpt
