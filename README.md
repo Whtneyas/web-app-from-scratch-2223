@@ -13,10 +13,14 @@ Bibelquote is a responsive website which offers the verses of the book of romans
    * [Bible Quotes](#bible-quotes)
    * [Technologies used](#technologies-used)
    * [Installation](#installation)
-   * [Resources](#resources)
+  
    * [Wishlist](#wishlist)
    * [Demo](#demo)
    * [License](#license)
+   * [Environments](#environments)
+   * [Resources](#resources)
+
+   
 
 
 
@@ -28,16 +32,44 @@ Bibelquote is a responsive website which offers the verses of the book of romans
 
 ## Installation
 
+**Step 1**
+
+Clone the repository via the terminal with this line of code: 
+
+      git clone https://github.com/Whtneyas/web-app-from-scratch-2223.git
+      
+      
+      
+**Step 2**
+
+Type in your terminal npm i to install all neccessary dependencies; 
+
+      npm i 
+
+**Step 3**
+
+Open your application via the index.html file or through the local host that is 
+
+      http://localhost:5173/
+
+
+
+   
+
 
 
 ## Lessons 
 - How to fetch an api 
-- How to create module 
+- How to create modules
 - How to render pages using has routing 
 - Implementation of UI stack ( Zero, partial, ideal, erroand empty states)
 
 
+
 ## Demo
+
+Here you can find a live demo of my application : https://whtneyas.github.io/web-app-from-scratch-2223/Bijbelversus/
+
 
 
 ## License 
@@ -51,15 +83,19 @@ This project is licensed under the MIT license
 - [X] Hash routing
 - [X] Responsive design
 - [ ] Filtering
-- [ ] rendering
-- [ ] Loading state
-- [ ] Zero State
+- [X] Loading state
+- [X] Zero State
+- [X] Error state
 - [ ] Ideal sate 
-- [ ] Write Wiki and ReadMe
+- [ ] Write Wiki
 - [ ] Clean code
-- [ ] Fetch and displaying data from an api
-- [ ] Fetch and displaying data from an api
+- [X] Fetch and displaying data from an api
+- [ ] Activity diagram
+- [X] ReadMe
 
+
+
+##Environments
 
 
 
