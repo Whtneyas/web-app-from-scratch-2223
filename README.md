@@ -95,7 +95,7 @@ This project is licensed under the MIT license
 
 
 
-##Environments
+## Environments
 
 
 
@@ -103,7 +103,8 @@ This project is licensed under the MIT license
 
 
 
-### Resources
+## Resources
+
 - https://openai.com/blog/chatgpt
 - https://cmda-minor-web.github.io/kickoff-2021/eerste-hulp-bij-het-gebruik-van-apis.pdf
 - https://whois.fdnd.nl/docs
