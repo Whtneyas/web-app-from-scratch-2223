@@ -1,29 +1,26 @@
 
 
-// export function addData(data) {
-//     const section = document.getElementById("content")
-//     let html =""
-//     data.forEach((item) => {
-//       html = `
+export function addData(data) {
+    const section = document.getElementById("content")
+    let html;
+    data.forEach((item) => {
+      html = `
 
-//       <section id="content">
 
-//       <article>
+          <article >
 
-//           <article >
+              <h2>${item.book_name}</h2> <span>${item.verse}</span>
+              <h3>${item.chapter}</h3>
+              <p>${item.text}</p>
+               <div>
+               <button>Next </button>
+               </div>
+          </article>
 
-//               <h2>${item.book_name}</h2> <span>${item.verse}</span>
-//               <h3>${item.chapter}</h3>
-//               <p>  ${item.text}</p>
-//           </article>
+        `;
+      section.insertAdjacentHTML('beforeend', html)
+    });
+  }
 
-//       </article>
-
-//   </section>
-//         `;
-//       section.insertAdjacentHTML('beforeend', html)
-//     })
-//   }
-
-//   export default addData
+  export default addData
 
