@@ -86,20 +86,12 @@ This project is licensed under the MIT license
 - [X] Loading state
 - [X] Zero State
 - [X] Error state
-- [ ] Ideal sate 
-- [ ] Write Wiki
-- [ ] Clean code
+- [X ] Ideal sate 
+- [X] Write Wiki
+- [X] Clean code
 - [X] Fetch and displaying data from an api
 - [ ] Activity diagram
 - [X] ReadMe
-
-
-
-## Environments
-
-
-
-
 
 
 
