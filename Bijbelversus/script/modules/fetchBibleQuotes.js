@@ -5,10 +5,12 @@ import {
   displayErrorMessage
 } from "../modules/states.js";
 
+
+//  import "./modules/filter.js";
 let bibleQuotes = []; // Initialize an empty array to store fetched quotes.
 let currentIndex = 0; // Initialize the index of the last displayed verse to 0.
 
-const fetchBibleQuotes = async () => {
+export const fetchBibleQuotes = async () => {
   console.log("fetching bible quotes");
 
   startLoading();
@@ -21,26 +23,27 @@ const fetchBibleQuotes = async () => {
 
     if (response.ok) {
 
-          const data = await response.json();
-          bibleQuotes = data.verses; // Save fetched quotes to the array.
-          const currentVerse = bibleQuotes[currentIndex];
-          displayBibleQuote(currentVerse);
-          currentIndex = (currentIndex + 1) % bibleQuotes.length; // Update the index to the next verse in the array.
-          stopLoading();
-          console.log(bibleQuotes);
+      const data = await response.json();
+      bibleQuotes = data.verses; // Save fetched quotes to the array.
+      const currentVerse = bibleQuotes[currentIndex];
+
+      displayBibleQuote(currentVerse);
+      currentIndex = (currentIndex + 1) % bibleQuotes.length; // Update the index to the next verse in the array.
+      stopLoading();
+      console.log(bibleQuotes);
 
 
     } else {
-          throw new Error(
-            `Failed to fetch bible quotes. Status code: ${response.status}`
-          );
-        }
-
-   // Display error message when the data fails to laod. 
-    } catch (error) {
-      console.error(error);
-      displayErrorMessage();
+      throw new Error(
+        `Failed to fetch bible quotes. Status code: ${response.status}`
+      );
     }
+
+    // Display error message when the data fails to laod. 
+  } catch (error) {
+    console.error(error);
+    displayErrorMessage();
+  }
 };
 
 const nextBtn = document.querySelector("button:nth-of-type(1)"); //select the left arrow button
@@ -48,16 +51,15 @@ const nextBtn = document.querySelector("button:nth-of-type(1)"); //select the le
 
 nextBtn.addEventListener("click", () => {
 
-    if (bibleQuotes.length > 0) { // If there are already quotes in the array,
-      const currentVerse = bibleQuotes[currentIndex];
-      displayBibleQuote(currentVerse);
-      currentIndex = (currentIndex + 1) % bibleQuotes.length; // Update the index to the next verse in the array.
+  if (bibleQuotes.length > 0) { // If there are already quotes in the array,
+    const currentVerse = bibleQuotes[currentIndex];
+    displayBibleQuote(currentVerse);
+    currentIndex = (currentIndex + 1) % bibleQuotes.length; // Update the index to the next verse in the array.
 
 
-  } 
-    else { // Otherwise, fetch new quotes from the API.
-      fetchBibleQuotes();
-    }
+  } else { // Otherwise, fetch new quotes from the API.
+    fetchBibleQuotes();
+  }
 
 });
 

@@ -83,11 +83,11 @@ const templates = {
     //     </div>
     // `,
     about: `
-        <div>
+        
         <section id="About" class ="about" >
-
+         
             <h4>About</h4>
-            <article class"= first-article>
+            <article class = "first-article">
                 <details>
                     <summary>Author of the Book</summary>
                     <p>Paul is the Autho of the book.Paul had never been to Rome when he wrote the letter to the Romans,
@@ -153,7 +153,7 @@ const templates = {
 
             <article>
                 <details>
-                    <summary>How do i apply thisd</summary>
+                    <summary>How do i apply this?</summary>
                     <p>The structure of Romans provides a hint into the importance of the book in our everyday lives.
                         Beginning with eleven chapters of doctrine, the book then transitions into five chapters of
                         practical instruction. This union between doctrine and life illustrates for Christians the
